@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = F17BD2012DFAC95900F2F0AC;
 			remoteInfo = frameworkOne;
+		};
+		F1B4BD822DFC4D5100826FC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1043FA12D3D8EF000B96617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1043FA82D3D8EF000B96617;
+			remoteInfo = MutipleFrameworkApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,7 +58,12 @@
 		F1043FB82D3D8EF200B96617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1043FBA2D3D8EF200B96617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F17BD20C2DFAC95A00F2F0AC /* frameworkOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = frameworkOne.xcodeproj; path = frameworkOne/frameworkOne.xcodeproj; sourceTree = "<group>"; };
+		F1B4BD7E2DFC4D5100826FC6 /* MutipleFrameworkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutipleFrameworkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F1B4BD7F2DFC4D5100826FC6 /* MutipleFrameworkAppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MutipleFrameworkAppTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F1043FA62D3D8EF000B96617 /* Frameworks */ = {
@@ -62,6 +74,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1B4BD7B2DFC4D5100826FC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F1043FAB2D3D8EF000B96617 /* MutipleFrameworkApp */,
+				F1B4BD7F2DFC4D5100826FC6 /* MutipleFrameworkAppTests */,
 				F1043FAA2D3D8EF000B96617 /* Products */,
 				F10440D82D3D93F800B96617 /* Frameworks */,
 			);
@@ -78,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F1043FA92D3D8EF000B96617 /* MutipleFrameworkApp.app */,
+				F1B4BD7E2DFC4D5100826FC6 /* MutipleFrameworkAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +162,29 @@
 			productReference = F1043FA92D3D8EF000B96617 /* MutipleFrameworkApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F1B4BD7D2DFC4D5100826FC6 /* MutipleFrameworkAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B4BD842DFC4D5100826FC6 /* Build configuration list for PBXNativeTarget "MutipleFrameworkAppTests" */;
+			buildPhases = (
+				F1B4BD7A2DFC4D5100826FC6 /* Sources */,
+				F1B4BD7B2DFC4D5100826FC6 /* Frameworks */,
+				F1B4BD7C2DFC4D5100826FC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B4BD832DFC4D5100826FC6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F1B4BD7F2DFC4D5100826FC6 /* MutipleFrameworkAppTests */,
+			);
+			name = MutipleFrameworkAppTests;
+			packageProductDependencies = (
+			);
+			productName = MutipleFrameworkAppTests;
+			productReference = F1B4BD7E2DFC4D5100826FC6 /* MutipleFrameworkAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,11 +192,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					F1043FA82D3D8EF000B96617 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					F1B4BD7D2DFC4D5100826FC6 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = F1043FA82D3D8EF000B96617;
 					};
 				};
 			};
@@ -176,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				F1043FA82D3D8EF000B96617 /* MutipleFrameworkApp */,
+				F1B4BD7D2DFC4D5100826FC6 /* MutipleFrameworkAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +250,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1B4BD7C2DFC4D5100826FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,7 +270,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1B4BD7A2DFC4D5100826FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1B4BD832DFC4D5100826FC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1043FA82D3D8EF000B96617 /* MutipleFrameworkApp */;
+			targetProxy = F1B4BD822DFC4D5100826FC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F1043FB22D3D8EF000B96617 /* Main.storyboard */ = {
@@ -375,6 +446,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +483,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,6 +497,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1B4BD852DFC4D5100826FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom-digital.MutipleFrameworkAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleFrameworkApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MutipleFrameworkApp";
+			};
+			name = Debug;
+		};
+		F1B4BD862DFC4D5100826FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom-digital.MutipleFrameworkAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutipleFrameworkApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MutipleFrameworkApp";
 			};
 			name = Release;
 		};
@@ -444,6 +553,15 @@
 			buildConfigurations = (
 				F1043FBE2D3D8EF200B96617 /* Debug */,
 				F1043FBF2D3D8EF200B96617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B4BD842DFC4D5100826FC6 /* Build configuration list for PBXNativeTarget "MutipleFrameworkAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B4BD852DFC4D5100826FC6 /* Debug */,
+				F1B4BD862DFC4D5100826FC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
